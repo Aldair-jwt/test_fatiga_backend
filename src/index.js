@@ -16,8 +16,6 @@ app.use(cors({
     'http://localhost:3000',          // CRA dev
     process.env.FRONTEND_URL,
     'http://localhost:3000',
-    //'http://172.16.24.255:3000',  // ← tu IP local
-    'http://172.16.24.234:3000',
   ].filter(Boolean),
   methods: ['GET', 'POST', 'DELETE'],
   allowedHeaders: ['Content-Type'],
