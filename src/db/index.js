@@ -2,10 +2,10 @@
 const sql = require('mssql');
 
 const config = {
-  server:   process.env.DB_SERVER   || '172.16.24.33\cmpmur',
-  database: process.env.DB_NAME     || 'fatiga_db',
-  user:     process.env.DB_USER     || 'murti',
-  password: process.env.DB_PASSWORD || 'rw,.12a.',
+  server:   process.env.DB_SERVER   || '',
+  database: process.env.DB_NAME     || '',
+  user:     process.env.DB_USER     || '',
+  password: process.env.DB_PASSWORD || '',
   port:     Number(process.env.DB_PORT) || 1433,
   options: {
     encrypt:                false,  // true si usas Azure
